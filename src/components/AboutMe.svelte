@@ -1,0 +1,150 @@
+<!-- Begin Main Content -->
+<div class="container white">Hello! I am
+	<h1 class="title is-1 white">
+	  Ansar Nisar Gill
+	</h1>
+	<h2 class=" subtitle white">
+	  Full Stack Desktop and Web Developer
+	</h2>
+  </div>
+  
+  <div class="card has-text-centered" style="margin-top: 50px;">
+	<div class="card-content">
+	  <h3 class="title is-2 white">About Me</h3>
+	  <h4 class="subtitle is-5 white">Jack of all trades, master of "some"</h4>
+	  <p>Sostware developer with more than <strong>2 years</strong> of well-rounded experience with a degree in the
+		field of
+		<strong>Information Technology</strong>, extensive knowledge of modern Web techniques as well as native apps and
+		love for
+		<strong>Performance</strong>.
+		Looking for an opportunity to work and upgrade, as well as being involved in an organization that
+		believes
+		in gaining a competitive edge and giving back to the community.</p>
+  
+	</div>
+  
+  </div>
+  
+  
+  <section class="section">
+	<div class="section-heading has-text-centered" style="margin-bottom:30px;;">
+	  <h3 class="title is-2 white">Services</h3>
+	  <h4 class="subtitle is-5 white">What can I do for you?</h4>
+	</div>
+	<div class="container">
+	  <div class="columns">
+		<div class="column">
+		  <div class="box">
+			<div class="content">
+			  <h4 class="title is-5 white">Front End Web Development</h4>
+			  Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
+			  Angular.
+			</div>
+		  </div>
+		</div>
+		<div class="column">
+		  <div class="box">
+			<div class="content">
+			  <h4 class="title is-5 white">Back End Web Development</h4>
+			  Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
+			</div>
+		  </div>
+		</div>
+	  </div>
+  
+	  <div class="columns">
+		<div class="column">
+		  <div class="box">
+			<div class="content">
+			  <h4 class="title is-5 white">Desktop Application Development</h4>
+			  Develop Performant Desktop applications for variety of business needs using latest Microsoft Stack suck as WPF and UWP.
+			</div>
+		  </div>
+		</div>
+		<div class="column">
+		  <div class="box">
+			<div class="content">
+			  <h4 class="title is-5 white">Application Performance Tuning & Upgradation</h4>
+			  Inspect why your app run so slow and would make it faster as much as possible.
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+  <div class="section-dark" >
+	<div class="container"> 
+	  <div class="columns is-multiline">
+		<div class="column is-12 about-me">
+		  <h1 class="title has-text-centered white section-title">Skills</h1>
+		</div>
+		<div class="column is-6 aos-init aos-animate" data-aos="fade-in" data-aos-easing="linear">
+		  <h1 class="white">C#, .NET</h1>
+		  <progress class="progress is-info white" value="80" max="100">80%</progress>
+		  <h1 class="white">ASP.NET, ASP.NET MVC, RAZOR PAGES</h1>
+		  <progress class="progress is-info white" value="75" max="100">75%</progress>
+		  <h1 class="white">HTML, CSS, Javascript</h1>
+		  <progress class="progress is-info white" value="75" max="100">75%</progress>
+		  <h1 class="white">Typescript, Angular</h1>
+		  <progress class="progress is-info white" value="70" max="100">70%</progress>
+		</div>
+		<div class="column is-6 aos-init aos-animate" data-aos="fade-in" data-aos-easing="linear">
+		  <h1 class="white">WPF, Winform</h1>
+		  <progress class="progress is-info white" value="85" max="100">30%</progress>
+		  <h1 class="white">Node js, Express</h1>
+		  <progress class="progress is-info white" value="70" max="100">30%</progress>
+		
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+  
+  <div class="section-dark resume" style="margin-top: 30px;">
+	<div class="container">
+	  <div class="columns is-multiline aos-init aos-animate" data-aos="fade-in" data-aos-easing="linear">
+		<div class="column is-12 about-me">
+		  <h1 class="title white has-text-centered section-title">
+			View My Resume
+		  </h1>
+		</div>
+		<div class="column is-10 has-text-centered is-offset-1">
+		  <h2 class="subtitle white">
+			To know in detail what I have been upto...
+		  </h2>
+  
+		  <a href="https://docs.google.com/document/d/1ZnUg4be-HKbLKBfA2ipsv7lhU7R8NDOSVhKgJG3VMDE/edit?usp=sharing"
+			target="_blank" class="button k-button raised k-primary has-gradient is-fat is-bold">
+			<span class="text">Download Resume</span>
+			<span class=" front-gradient"></span>
+			 
+		  </a>
+  
+  
+		</div>
+	  </div>
+	</div>
+  </div>
+<!-- End Main Content -->
+<style>
+	strong{
+    color: white;
+text-transform: capitalize;
+}
+.card {
+    background: #7F00FF;
+    box-shadow: none;
+  
+    background: linear-gradient(to right, #7F00FF, #3f00fc) !important;
+    color: #fff;
+  
+  }
+  .box {
+    background: #7F00FF;
+  
+    background: linear-gradient(to right, #7F00FF, #3f00fc) !important;
+    color: #fff;
+  
+  }
+</style>
