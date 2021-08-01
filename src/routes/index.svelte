@@ -1,60 +1,53 @@
 <script context="module">
 	export const prerender = true;
 </script>
+
 <script>
-	import { onMount } from 'svelte';
-	onMount(async() => {
-		const {default:WinBox } = await import('../winbox/winbox');
-		const about = document.querySelector('#about');
-		const contact = document.querySelector('#contact');
-		const aboutContent = document.querySelector('#about-content');
-		const contactContent = document.querySelector('#contact-content');
-
-		about.addEventListener('click', () => {
-			const aboutBox = new WinBox({
-				title: 'About Me',
-				width: '400px',
-				height: '400px',
-				top: 50,
-				right: 50,
-				bottom: 50,
-				left: 50,
-				mount: aboutContent,
-				onfocus: function () {
-					this.setBackground('#00aa00');
-				},
-				onblur: function () {
-					this.setBackground('#777');
-				}
-			});
+	async function openAboutWindow() {
+		const { default: WinBox } = await import('../winbox/winbox');
+		const aboutBox = new WinBox({
+			title: 'About Me',
+			width: '400px',
+			height: '400px',
+			top: 50,
+			right: 50,
+			bottom: 50,
+			left: 50,
+			mount: document.querySelector('#about-content'),
+			onfocus: function () {
+				this.setBackground('#00aa00');
+			},
+			onblur: function () {
+				this.setBackground('#777');
+			}
 		});
-
-		contact.addEventListener('click', () => {
-			const contactBox = new WinBox({
-				title: 'Contact Me',
-				width: '400px',
-				height: '400px',
-				top: 150,
-				right: 50,
-				bottom: 50,
-				left: 250,
-				mount: contactContent,
-				onfocus: function () {
-					this.setBackground('#00aa00');
-				},
-				onblur: function () {
-					this.setBackground('#777');
-				}
-			});
+	}
+	async function openContactWindow() {
+		const { default: WinBox } = await import('../winbox/winbox');
+		const contactBox = new WinBox({
+			title: 'Contact Me',
+			width: '400px',
+			height: '400px',
+			top: 150,
+			right: 50,
+			bottom: 50,
+			left: 250,
+			mount: document.querySelector('#contact-content'),
+			onfocus: function () {
+				this.setBackground('#00aa00');
+			},
+			onblur: function () {
+				this.setBackground('#777');
+			}
 		});
-	});
+	}
 </script>
 
 <div class="container">
 	<nav>
 		<ul>
-			<li id="about">/about</li>
-			<li id="contact">/contact</li>
+			<li id="about" on:click={openAboutWindow}>/about</li>
+			<li id="contact" on:click={openContactWindow}>/contact</li>
 		</ul>
 	</nav>
 
@@ -78,16 +71,17 @@
 <div class="hidden">
 	<div id="about-content">
 		<h2>about-me:$<span class="cursor">|</span></h2>
-		<p>My name is Brad Traversy and I have been programming for 14 years</p>
-		<p>Some of the languages that I am fluent in include JavaScript, Python, PHP and Ruby</p>
+		<p>Hi!</p>
+		<p>This is Ansar Nisar.</p>
+		<p>Some of the languages that I am fluent in include C#, dotnet, and JavaScript</p>
 	</div>
 
 	<div id="contact-content">
 		<h2>contact-me:$<span class="cursor">|</span></h2>
 		<p>You can contact me at the email and phone number below</p>
 		<ul>
-			<li>Phone: 555-555-5555</li>
-			<li>Email: brad@email.com</li>
+			<li>Phone: +923074257049</li>
+			<li>Email: ansarnisargill@gmail.com</li>
 		</ul>
 	</div>
 </div>
