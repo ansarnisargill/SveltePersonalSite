@@ -3,10 +3,8 @@
 </script>
 
 <script>
-	let showAbout = false;
 	import Social from '../components/social.svelte';
 	import Nav from '../components/nav.svelte';
-	import About from '../components/about.svelte';
 	async function openContactWindow() {
 		const { default: WinBox } = await import('../winbox/winbox');
 		const contactBox = new WinBox({
@@ -26,19 +24,32 @@
 			}
 		});
 	}
+
+	async function openAboutWindow() {
+		const { default: WinBox } = await import('../winbox/winbox');
+		const aboutBox = new WinBox({
+			title: 'About Me',
+			width: '400px',
+			height: '400px',
+			top: 50,
+			right: 50,
+			bottom: 50,
+			left: 50,
+			mount: document.querySelector('#about-content'),
+			onfocus: function () {
+				this.setBackground('#00aa00');
+			},
+			onblur: function () {
+				this.setBackground('#777');
+			}
+		});
+	}
 </script>
 
 <div class="container">
 	<nav>
 		<ul>
-			<li
-				id="about"
-				on:click={() => {
-					showAbout = !showAbout;
-				}}
-			>
-				/about
-			</li>
+			<li id="about" on:click={openAboutWindow}>/about</li>
 			<li id="contact" on:click={openContactWindow}>/contact</li>
 		</ul>
 	</nav>
@@ -49,10 +60,13 @@
 		<Social />
 	</main>
 </div>
-{#if showAbout}
-<About />
-{/if}
 <div class="hidden">
+	<div id="about-content">
+		<h2>about-me:$<span class="cursor">|</span></h2>
+		<p>Hi!</p>
+		<p>This is Ansar Nisar.</p>
+		<p>Some of the languages that I am fluent in include C#, dotnet, and JavaScript</p>
+	</div>
 	<div id="contact-content">
 		<h2>contact-me:$<span class="cursor">|</span></h2>
 		<p>You can contact me at the email and phone number below</p>

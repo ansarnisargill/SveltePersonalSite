@@ -17,7 +17,7 @@ async function routeToHome(){
 	</nav>
 
 	<main>
-		<h1>Blog:$<span class="cursor">|</span></h1>
+		<h1>Essays:$<span class="cursor">|</span></h1>
 		<h3>List of Posts:</h3>
 	</main>
 </div>

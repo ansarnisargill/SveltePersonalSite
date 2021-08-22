@@ -4,10 +4,10 @@
 		<a href="/blog">Blog</a>
 	</li>
 	<li>
-		<a href="https://www.linkedin.com/in/ansarnisar/" target="_blank">Notes</a>
+		<a href="/notes">Notes</a>
 	</li>
 	<li>
-		<a href="https://github.com/ansarnisargill/" target="_blank">Essays</a>
+		<a href="/essays">Essays</a>
 	</li>
 </ul>
 
