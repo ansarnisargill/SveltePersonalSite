@@ -1,12 +1,5 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
 <script>
-import {goto} from '$app/navigation'
-async function routeToHome(){
-	await goto("/");
-}
+	import { routeToHome } from '../../Helpers';
 </script>
 
 <div class="container">
@@ -21,5 +14,3 @@ async function routeToHome(){
 		<h3>List of Posts:</h3>
 	</main>
 </div>
-
-

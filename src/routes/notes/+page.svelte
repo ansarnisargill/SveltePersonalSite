@@ -1,5 +1,6 @@
-<script context="module">
-	export const prerender = true;
+<script>
+	import data from '../../stringResources';
+	const links = data.notes.links;
 </script>
 
 <div class="container">
@@ -15,11 +16,13 @@
 		<h1>Notes:$<span class="cursor">|</span></h1>
 		<h3>List of Posts:</h3>
 		<ol>
-			<li>
-				<a href="/notes/how-to-rename-all-files-in-a-directory">
-					How to rename all the files in a directory
-				</a>
-			</li>
+			{#each links as link}
+				<li>
+					<a href={link.link}>
+						{link.heading}
+					</a>
+				</li>
+			{/each}
 		</ol>
 	</main>
 </div>

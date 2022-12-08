@@ -1,6 +1,4 @@
-<script context="module">
-	export const prerender = true;
-</script>
+
 
 <script>
 	import Social from '../components/social.svelte';
